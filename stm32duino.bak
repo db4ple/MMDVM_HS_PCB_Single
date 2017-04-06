@@ -35,12 +35,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "MMDVM Hotspot"
+Date "2017-04-02"
+Rev "V1.0"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "MMDVM Hotspot for MMDVM_HS, Singled Sided PCB"
+Comment2 "Creative Commons CC by SA NC"
 Comment3 ""
 Comment4 ""
 $EndDescr
