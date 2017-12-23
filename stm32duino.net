@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source E:/Hacking/ham/gits/MMDVM_HS_STM32DUINO_RF7021_SINGLESIDED/stm32duino.sch)
-    (date "22.08.2017 13:00:09")
-    (tool "Eeschema 4.0.5")
+    (date "23.12.2017 21:58:42")
+    (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "MMDVM Hotspot")
@@ -24,7 +24,7 @@
     (comp (ref P1)
       (value RF7021SE)
       (footprint Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm)
-      (libsource (lib conn) (part CONN_02X07))
+      (libsource (lib stm32duino-cache) (part CONN_02X07))
       (sheetpath (names /) (tstamps /))
       (tstamp 58D673D0))
     (comp (ref R1)
@@ -114,24 +114,23 @@
     (comp (ref P2)
       (value DISP_I2C)
       (footprint Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm)
-      (libsource (lib conn) (part CONN_01X04))
+      (libsource (lib stm32duino-cache) (part CONN_01X04))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DBEE1E))
     (comp (ref P3)
       (value DISP_SER)
       (footprint Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm)
-      (libsource (lib conn) (part CONN_01X03))
+      (libsource (lib stm32duino-cache) (part CONN_01X03))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DF685D))
     (comp (ref P4)
       (value HOST_SER)
       (footprint Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm)
-      (libsource (lib conn) (part CONN_01X04))
+      (libsource (lib stm32duino-cache) (part CONN_01X04))
       (sheetpath (names /) (tstamps /))
       (tstamp 58DF6A9D)))
   (libparts
-    (libpart (lib conn) (part CONN_01X03)
-      (description "Connector, single row, 01x03")
+    (libpart (lib stm32duino-cache) (part CONN_01X03)
       (footprints
         (fp Pin_Header_Straight_1X03)
         (fp Pin_Header_Angled_1X03)
@@ -144,8 +143,7 @@
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name P2) (type passive))
         (pin (num 3) (name P3) (type passive))))
-    (libpart (lib conn) (part CONN_01X04)
-      (description "Connector, single row, 01x04")
+    (libpart (lib stm32duino-cache) (part CONN_01X04)
       (footprints
         (fp Pin_Header_Straight_1X04)
         (fp Pin_Header_Angled_1X04)
@@ -159,8 +157,7 @@
         (pin (num 2) (name P2) (type passive))
         (pin (num 3) (name P3) (type passive))
         (pin (num 4) (name P4) (type passive))))
-    (libpart (lib conn) (part CONN_02X07)
-      (description "Connector, double row, 02x07")
+    (libpart (lib stm32duino-cache) (part CONN_02X07)
       (footprints
         (fp Pin_Header_Straight_2X07)
         (fp Pin_Header_Angled_2X07)
@@ -198,7 +195,7 @@
       (description Resistor)
       (footprints
         (fp R_*)
-        (fp Resistor_*))
+        (fp R_*))
       (fields
         (field (name Reference) R)
         (field (name Value) R))
@@ -254,8 +251,8 @@
   (libraries
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical stm32duino-cache)
+      (uri E:\Hacking\ham\gits\MMDVM_HS_STM32DUINO_RF7021_SINGLESIDED\stm32duino-cache.lib))
     (library (logical stm32f103c8t6-module-china)
       (uri E:\Hacking\ham\gits\MMDVM_HS_STM32DUINO_RF7021_SINGLESIDED\stm32f103c8t6-module-china.lib)))
   (nets
